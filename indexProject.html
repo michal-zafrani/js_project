@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>פרויקט java script michal</title>
+
+  <!-- קישור לבוסטראפ בחיבור לאינטרנט -->
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+
+  <!-- קישור לבוטסטראפ במחשב שלי -->
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-reboot.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body dir="rtl" class="container-fluid m-0 p-0">
+
+  <div class="boxTabSide">
+    <div class="tabSide row align-items-center my-4 bg-white " id="linkCaculator">
+      <span class="font-weight-bolder lead">מחשבון</span>
+      <i class="fa fa-calculator fa-3x iGrad"></i>
+    </div>
+    <div class="tabSide row align-items-center my-4 bg-white " id="linkGame">
+      <span class="font-weight-bolder lead">משחק</span>
+      <i class="fa fa-gamepad fa-3x iGrad"></i>
+    </div>
+    <div class="tabSide row align-items-center my-4 bg-white " id="linkTaskBoard">
+      <span class="font-weight-bolder lead">משימות</span>
+      <i class="fa fa-calendar-o fa-3x iGrad"></i>
+    </div>
+  </div>
+
+
+  <!-- home ------------------------------------------------------------------>
+  <div class="divBody1 container-fluid m-0 p-0 home">
+    <div class="col-1 text-right text-secondary ml-auto">בס"ד</div>
+    <div class="col-lg-5 col-md-8 mx-auto">
+      <img src="./images/logoj2s2.png" class="divImgHead col-12" alt="logo">
+    </div>
+  </div>
+  <div class="divBody2 container-fluid m-0 p-0 py-5 home">
+
+    <h3 class="font-weight-lighter text-center text-white mb-5">הפרויקט כולל:</h3>
+
+    <div id="accordion" class="col-12 col-10 col-sm-8 col-lg-5 mx-auto p-0 px-2 px-xl-5 my-4">
+      <div class="col-12 my-4">
+        <div class="cardHead bg-white shadow">
+          <a class="card-link row align-items-center" data-toggle="collapse" href="#collapseOne">
+            <span class="d-block col-7 col-sm-9 text-center my-2">
+              <h2 class="font-weight-bolder">מחשבון</h2>
+            </span>
+            <div class="col-4 col-sm-2 text-center m-0 py-4">
+              <i class="fa fa-calculator fa-3x my-2 iGrad"></i>
+            </div>
+          </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-parent="#accordion">
+          <div class="card-body crdBody text-center text-white lead">
+            המחשבון עובד גם בחישובים ארוכים, ניתן לשכפל את המחשבון עשרות פעמים וכל מחשבון עובד בנפרד.
+            ניתן גם לשנות את צבע רקע המחשבון לכל אחד בנפרד וכן בלחיצה על איקס להסיר אותו.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 my-4">
+        <div class="cardHead bg-white shadow">
+          <a class="card-link row align-items-center" data-toggle="collapse" href="#collapse2">
+            <span class="d-block col-7 col-sm-9 text-center my-2">
+              <h2 class="font-weight-bolder">משחק</h2>
+            </span>
+            <div class="col-4 col-sm-2 text-center m-0 py-4">
+              <i class="fa fa-gamepad fa-3x my-2 iGrad"></i>
+            </div>
+          </a>
+        </div>
+        <div id="collapse2" class="collapse" data-parent="#accordion">
+          <div class="card-body crdBody text-center text-white lead">
+            במשחק זה עליך לשנן את הקוביות המוארות ולאחר מכן לשחזר את התבנית,
+            המשחק קצוב בזמן, שבו עליך למלא כמה שיותר לוחות ולצבור נקודות
+            רק כאשר תאסוף מספיק נקודות תוכל להכנס לשלב המומחה.
+          </div>
+        </div>
+      </div>
+      <div class="col-12 my-4">
+        <div class="cardHead bg-white shadow">
+          <a class="card-link row align-items-center" data-toggle="collapse" href="#collapse3">
+            <span class="d-block col-7 col-sm-9 text-center my-2">
+              <h2 class="font-weight-bolder">לוח משימות</h2>
+            </span>
+            <div class="col-4 col-sm-2 text-center m-0 py-4">
+              <i class="fa fa-calendar-o fa-3x my-2 iGrad"></i>
+            </div>
+          </a>
+        </div>
+        <div id="collapse3" class="collapse" data-parent="#accordion">
+          <div class="card-body crdBody text-center text-white lead">
+            מערכת ניהול המשימות מאפשרת לשמור משימות בלוח מהיום והלאה,
+            המשימות מוצגות בלוח עד שעובר הזמן שלהן,
+            לנוחותך ניתן להציג את המשימות גם בלוח שנה או ברשימה.
+            לכל משימה יש אפשרות לערוך, למחוק, לשכפל ולסמן שהמשימה נעשתה מבלי למחוק אותה.
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div>
+      <p class="text-center lead text-white-50 p-2">
+        הפרויקט מוגש ע"י מיכל זעפרני, תלמידת קורס אתרא 2020
+        <br>תאריך <span class="small">22-12-2020</span> , המורה - תהילה רביבו.
+        <br>הפרויקט בנוי על Java script & jQuery
+      </p>
+    </div>
+  </div>
+  <div class="text-center py-2 shadow" id="homeLink"><i class="fa fa-home fa-2x"></i></div>
+
+  <!-- מחשבון --------------------------------------------------------------->
+  <div id="contentCalculators" class="container-fluid m-0 p-0 row justify-content-center">
+    <button id="btnNewCalcu" class=" btnAddcs btn p-3 m-5 col-3">
+      <i class="fa fa-plus col-12"></i>
+      הוסף מחשבון חדש</button>
+    <div id="calcu0"
+      class="div_parent_machsevon bgGrad m-5 col-10 col-sm-8 col-md-6 col-lg-4 p-3 border rounded shadow">
+      <div class="col-11 mx-auto row p-1 justify-content-between align-items-center">
+        <button class="closeX btn m-1" title="סגור מחשבון"><i class="fa fa-times"></i> </button>
+        <button class="addNew btn m-1" title="הוסף מחשבון חדש"> <i class="fa fa-plus"></i></button>
+        <input type="color" class="changeColor form-control p-0 m-1 col-1" value="#3c258b"
+          title="שנה את צבע רקע המחשבון">
+      </div>
+      <div class="col-11 mx-auto p-1 border bg-white rounded shadow text-center" dir="ltr">
+        <p class="showEx lead m-0 text-secondary">00</p>
+        <p class="showResult display-4 m-0">0.00</p>
+      </div>
+      <div class="col-11 mx-auto row justify-content-between btnsNum p-0 pt-1" dir="ltr">
+        <div class="col-3 p-1 actionMath"><span class="btn p-1 shadow-sm">+</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">1</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">2</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">3</span></div>
+        <div class="col-3 p-1 actionMath"><span class="btn p-1 shadow-sm">-</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">4</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">5</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">6</span></div>
+        <div class="col-3 p-1 actionMath"><span class="btn p-1 shadow-sm">*</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">7</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">8</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">9</span></div>
+        <div class="col-3 p-1 actionMath"><span class="btn p-1 shadow-sm">/</span></div>
+        <div class="col-3 p-1 resHachuz"><span class="btn p-1 shadow-sm">%</span></div>
+        <div class="col-3 p-1 numMath"><span class="btn p-1 shadow-sm">0</span></div>
+        <div class="col-3 p-1 cKey"><span class="btn p-1 shadow-sm">c</span></div>
+        <div class="col-12 p-1 btn resAll"><span class="btn p-1 shadow-sm">=</span></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- לוח משימות ----------------------------------------------------------->
+  <div id="contentTaskboard" class="container-fluid m-0 p-0 row">
+    <div class="d-none col-10 col-sm-8 col-lg-5 col-xl-4 mx-auto p-1 p-sm-5 taskMain mt-5 mt-md-0">
+      <div class="boxAddTask mx-auto p-1 shadow-lg">
+        <div class="boxAddTaskWhite bg-white shadow p-4">
+          <span class="d-block text-center">
+            <h2 class="font-weight-lighter">המשימה שלי</h2>
+          </span>
+          <input type="text" name="taskTitle" id="taskTitle" class="form-control my-2" placeholder="נושא המשימה:"
+            maxlength="20">
+          <textarea rows="2" name="taskDescription" id="taskDescription" class="form-control my-2"
+            placeholder="תאור המשימה:(עד 50 תוים)" maxlength="50"></textarea>
+          <input type="date" name="dateTask" id="dateTask" class="form-control my-2" placeholder="תאריך">
+          <p id="alertBoard" class="text-danger text-right">תאריך המשימה עבר*  </p>
+          <button id="btnAdd" class="btnAddcs btn btn-block border my-2"><span class="lead"> הוסף משימה</span></button>
+        </div>
+      </div>
+      <div class="row col-12 mx-auto p-2">
+        <button id="goCalendar" class="btnAddcs btn bg-white my-2 col-12 col-sm shadow-lg"><span class="lead">הצג בלוח
+            שנה</span></button>
+        <button id="deleteTasks" class="btnAddcs btn bg-white my-2 col-12 col-sm mr-sm-2 shadow-lg"><span
+            class="lead">נקה
+            משימות</span></button>
+      </div>
+      <div class="col-12 mx-auto px-2">
+        <div class="input-group btnAddcs">
+          <input type="text" name="filterTask" id="filterTask" class="form-control" placeholder="חיפוש משימה"
+            maxlength="20">
+          <div class="input-group-prepend bg-white p-1">
+            <i class="fa fa-search fa-sm input-group-text iGrad border-0"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-block col-lg-5 divEmpty"></div>
+
+    <div id="contentTasks" class="col-lg-5 col-xl-5 mx-auto p-5 shadow-lg">
+
+    </div>
+
+    <div class="container-fluid row p-0 m-0 content" id="partTable">
+
+      <div class="d-none d-md-block col-md-2"></div>
+      <div class="col-10 col-md-8 p-0 m-0 tableMonth mx-auto text-center row my-5 shadow">
+
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m01">
+          <h4>ינואר</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m02">
+          <h4>פברואר</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m03">
+          <h4>מרץ</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m04">
+          <h4>אפריל</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m05">
+          <h4>מאי</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m06">
+          <h4>יוני</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m07">
+          <h4>יולי</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m08">
+          <h4>אוגוסט</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m09">
+          <h4>ספטמבר</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m10">
+          <h4>אוקטובר</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m11">
+          <h4>נובמבר</h4>
+          <div></div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-3 border m-0" id="m12">
+          <h4>דצמבר</h4>
+          <div></div>
+        </div>
+      </div>
+
+      <div class="col-10 col-md-2 text-center d-md-flex align-content-center mx-auto">
+        <div class="my-auto mx-auto">
+          <button id="backTasks" class="d-none btn vCircle btn-lg text-white my-4 col-12 shadow-lg">חזור</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- משחק ------------------------------------------------------------>
+  <div id="contentGame" class="container-fluid m-0 p-0 row">
+
+    <!-- 1 פתיחת מודל איך משחקים -->
+    <div>
+      <button id="openModal" type="button" class="btn sr-only" data-toggle="modal" data-target="#modalExplain"
+        data-backdrop="static">
+        Open modal
+      </button>
+      <!-- The Modal -->
+      <div class="modal fade" id="modalExplain">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+          <div class="modal-content bg-white p-2">
+            <div class="modal-body text-center text-white modal_css">
+              <div id="modalOpenDiv">
+                <h4 id="modalOpenTitle" class="modal-title display-4">איך משחקים</h4>
+                <p class="lead col-10 mx-auto">
+                  במשחק זה עליך לשנן את הקוביות המוארות ולאחר מכן לשחזר את התבנית,
+                  המשחק קצוב בזמן, שבו עליך למלא כמה שיותר לוחות ולצבור נקודות<br>
+                  רק כאשר תאסוף מספיק נקודות תוכל להכנס לשלב המומחה...
+                </p>
+                <button id="modalOpenBtn1" type="button" class="btn bg-white btnAddcs lead col-3 col-sm-2">המשך</button>
+              </div>
+              <div id="modalOpenDiv2">
+                <div class="row col-12 my-2">
+                  <label for="selectUser" class="col-12 col-sm-3 lead text-center">שחקן קיים? </label>
+                  <select id="selectUser" name="selectUser" class="custom-select col-12 col-sm">
+                    <option selected>בחר שחקן</option>
+                  </select>
+                </div>
+                <div class="row col-12 my-2">
+                  <label for="userGame" class="col-12 col-sm-3 lead text-center">שחקן חדש? </label>
+                  <input type="text" name="userGame" id="userGame" class="form-control col-12 col-sm"
+                    placeholder="הכנס שם שחקן">
+                </div>
+                <button id="modalOpenBtn2" type="button" class="btn bg-white btnAddcs lead col-3 col-sm-2">המשך</button>
+              </div>
+              <div id="modalOpenDiv3">
+                <div class="justify-content-center" id="modalFooter">
+                  <p class="text-center col-12 display-4">בחר רמה ו... התחל לשחק</p>
+                  <button type="button" class="btn btn-outline-light col-3 col-sm-2 m-1"
+                    onclick="selectLevel(3)">קל</button>
+                  <button type="button" class="btn btn-outline-light col-3 col-sm-2 m-1"
+                    onclick="selectLevel(4)">מתקדם</button>
+                  <button type="button" id="level5" class="btn btn-outline-light col-3 col-sm-2 m-1"
+                    onclick="selectLevel(5)">מומחה</button>
+                  <button type="button" class="btn btn-outline-light col-8 mx-5 my-1" data-dismiss="modal"
+                    id="btnBeginGame">התחל
+                    לשחק</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- game board -->
+    <div class="container-fluid p-0 m-0" id="gameBoard">
+      <div class="navbar navbar-expand-lg col-12 m-0 p-2 topGame shadow text-right row  font-weight-bolder">
+        <span id="player" class="col-2 ml-auto col-lg-1 m-md-0">אורח</span>
+        <span id="scoremd" class="col-2 text-right mx-auto d-block d-lg-none">0</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="fa fa-bars navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <span id="typeLev" class="col">קל</span>
+          <span class="col">לוחות: <span id="numGames">0</span></span>
+          <span class="col">נצחונות: <span id="numWinV">0</span></span>
+          <span class="col">כשלונות: <span id="numWinX">0</span></span>
+          <span class="col">נקודות: <span id="scores2">0</span></span>
+          <span class="dropdown"><span class="dropdown-toggle col" data-toggle="dropdown">
+              משחק חדש
+            </span>
+            <div class="dropdown-menu text-center">
+              <p class="dropdown-item-text">אזהרה: <br> אתה תאבד את הנקודות שצברת במשחק זה</p>
+              <button class="dropdown-item btnAddcs col-10 mx-auto rounded" id="btnNewGame">המשך בכל זאת</button>
+            </div>
+          </span>
+        </div>
+      </div>
+      <div id="mumcheAl">
+        <video autoplay muted loop id="myVideo2">
+          <source src="./images/Animated_Trophy.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="col-12 text-white text-center">
+          <p class="font-weight-bolder em2">אלוף!!!!<br> נפתח לך שלב המומחה!</p>
+        </div>
+      </div>
+      <div class="container-fluid p-0 m-0 d-flex align-items-center" id="gameBoard2">
+        <div class="col-10 col-sm-7 col-lg-5 col-xl-4 mx-auto d-flex align-items-center row">
+          <div id="tableGame" class="col-12 d-flex flex-column justify-content-center">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal scores end -->
+    <div>
+      <button id="openModalEnd" type="button" class="btn sr-only" data-toggle="modal" data-target="#modalEnd"
+        data-backdrop="static">
+        Open modal
+      </button>
+      <!-- The Modal -->
+      <div class="modal fade" id="modalEnd">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content modal_css p-1 mx-auto">
+            <div class="modal-body text-center bg-white justify-content-center">
+              <p id="titleme" class="text-center col-12 display-4">כל הכבוד <span></span></p>
+              <table class="table col-12 col-sm-11 mx-auto text-center lead font-weight-bolder">
+                <tbody>
+                  <tr>
+                    <td>מספר הנקודות הכולל שצברת:</td>
+                    <td><span id="scores">0</span>
+                      <br><span id="bestScore" class="text-black-50 small"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>מספר הנקודות שצברת במשחק זה: </td>
+                    <td id="scoresp">0</td>
+                  </tr>
+                  <tr>
+                    <td>מספר לוחות שעשית: </td>
+                    <td id="countGames">0</td>
+                  </tr>
+                  <tr>
+                    <td>מספר לוחות שהצליחו: </td>
+                    <td><span id="countV">0</span>
+                      <br><span id="bestCountV" class="text-black-50 small"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>מספר לוחות שנכשלו: </td>
+                    <td id="countX">0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <button type="button" class="btn btn-outline-dark col-6 mx-5" data-dismiss="modal" id="btnNewGame2">משחק
+                חדש</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal best -->
+    <div>
+      <button id="openModalBest" type="button" class="btn sr-only" data-toggle="modal" data-target="#modalBest"
+        data-backdrop="static">
+        Open modal
+      </button>
+      <!-- The Modal -->
+      <div class="modal fade" id="modalBest">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-white p-1">
+            <div id="divmdvmp4" class="col-12 modal-body text-center justify-content-center">
+              <video autoplay muted loop id="myVideo">
+                <source src="./images/Animated_Trophy.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+              </video>
+              <div class="col-sm-7 col-12 mr-auto text-white" id="titleBest">
+                <p class="lead">היי <span id="titleBestname"></span><br> שברת שיא חדש !!!</p>
+                <p class="font-weight-bolder" id="textBest"></p>
+              </div>
+              <button type="button" class="btn sr-only" data-dismiss="modal" id="closemdbest">close(sr-only)</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="fixed-bottom">
+
+  </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scriptProject.js"></script>
+</body>
+
+</html>

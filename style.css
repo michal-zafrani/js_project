@@ -1,0 +1,386 @@
+body {
+    font-family:  Calibri,'Gill Sans',  'Gill Sans MT','Trebuchet MS', sans-serif;
+}
+
+.divBody1 {    
+    background-color: white;
+    height: 99vh;
+}
+
+.divBody2 {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+    min-height: 100vh;
+}
+
+@media only screen and (min-height: 1024px) {
+    .divBody1 {height: 60vh;}
+    .divBody2 {min-height: 50vh;}
+}
+
+.boxTabSide {
+    position: fixed !important;
+    z-index: 20;
+    height: 100vh;
+    right: 0;
+}
+
+.tabSide {
+    position: fixed;
+    right: -70px;
+    height: 100px;
+    width: 190px;
+    transition: 0.3s;
+    z-index: 21;
+    border-radius: 50px 0 0 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.171);
+}
+
+.tabSide:hover {right: 0;}
+@media only screen and (min-width: 576px) {
+    #linkCaculator{top: 20vh}
+    #linkGame{top: 40vh}
+    #linkTaskBoard{top: 60vh}
+}
+.tabSide span {
+    position: absolute;
+    right: 13%;
+    top: 35%;
+}
+.tabSide i {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+.activeLink {
+    box-shadow: 0 0 10px  #b6004c9d , 0 0 20px #3d258b86 !important;
+}
+
+.iGrad ,.tabSide span ,h2 , .btnAddcs span ,.topGame span {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+    display: inline-block;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media only screen and (max-width: 576px) {
+    .boxTabSide {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .tabSide {
+        top: -100px;
+        position: fixed;
+        height: 140px;
+        width: 80px;
+        border-radius: 0 0 50px 50px;
+    }
+    
+    .tabSide:hover {top: -30px;}
+
+    #linkCaculator{right: 15%;}
+    #linkGame{right: 45%;}
+    #linkTaskBoard{right: 75%;}
+
+    .tabSide span {
+        top: 10%;
+    }  
+    .tabSide i {
+        top: 55%;
+        transform: scale(0.8);
+    }
+}
+
+footer {
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+}
+
+/* home */
+.divImgHead {
+    margin-top: 30vh;
+}
+#homeLink {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: rgba(255, 255, 255, 0.836);
+    position: fixed;
+    left: 1%;
+    bottom: 1%;
+    z-index: 2;
+}
+#homeLink:hover {
+    transform: scale(1.05);
+    transition: ease;
+}
+
+.cardHead {
+    height: 110px;
+    border-radius: 55px;
+}
+.cardHead div{
+    border-right: 1px dashed #b6004c;
+}
+.crdBody {
+    background-color: rgba(255, 255, 255, 0.048);
+    border-radius: 100px;
+    font-size: 17px;
+}
+
+/* calculator */
+#contentCalculators {
+    min-height: 100vh;
+}
+
+.bgGrad {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+    height: 100%;
+}
+
+.btnsNum span{
+    background-color: rgba(255, 255, 255, 0.418);
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-size: 4ex;
+    font-weight: lighter;
+}
+
+.btnsNum span:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+/* לוח משימות */
+#contentTaskboard {
+    min-height: 100vh;
+   
+}
+
+@media only screen and (min-width: 992px) {
+    .taskMain {
+        position: fixed;
+        right: 10%;
+        top: 10%;
+        z-index: 1;
+    }
+}
+
+.boxAddTask {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+    border-radius: 8px;
+}
+.boxAddTaskWhite {
+    height: 100%;
+    border-radius: 5px;
+}
+.boxAddTask:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.btnAddcs {
+    box-shadow: 0 0 2px #b6004c, 0 0 3px #3c258b !important;
+}
+.btnAddcs:hover  {
+    box-shadow: 0 0 5px #b6004c, 0 0 10px #3c258b !important;
+}
+input:focus ,textarea:focus, select:focus{
+    box-shadow: 0 0 5px #b6004c, 0 0 10px #3c258b !important;
+    border: 0 !important;
+}
+#filterTask{
+    border: 0 !important;
+}
+#filterTask:focus {
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.048) !important;
+}
+#contentTasks {
+    background-image: url('./images/gradTask4.png');
+    background-attachment: fixed;
+}
+.taskSin {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+    border-radius:0 10px 10px 0;   
+}
+.taskSin:hover{
+    transform: scale(1.05);
+    transition: 0.4s ease;
+}
+.taskSin>div {
+    border-radius:0 5px 5px 0;
+    height: 100%;
+    position: relative;
+}
+.vCircle {
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    top: -40px; 
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+    border: 5px solid white;
+    z-index: 1;
+}
+.vCircleCheck {
+    right: -25px;
+}
+.vCircleEditor {
+    right: 25px;
+}
+.vCircleDelete {
+    right: 75px;
+}
+.vCircleCopy {
+    right: 125px;
+}
+.vCircle:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+#backTasks{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    top: 35vh;
+    left: 5%;
+}
+@media only screen and (max-width: 576px){
+    #backTasks {
+        height: 50px;
+        width: 80%;
+        top: 85%;
+        left: 10%;
+        right: 10%;
+        border-radius: 10px;
+    }
+}
+.does {
+    opacity: 0.9;
+}
+.does .vCircleCheck {
+    z-index: 2;
+    transform: scale(1.8);
+    right: 10px;
+    top: 33px;
+    transition: 00.2s;
+}
+#partTable {
+    min-height: 100vh;
+    background-image: url('./images/gradTask4.png');
+    background-attachment: fixed;
+}
+.tableMonth {
+    margin-top: 10vh !important;
+}
+.tableMonth>div {
+    background-color: rgba(255, 255, 255, 0.911);
+    min-height: 150px;
+}
+.tableMonth>div:hover ,.nowMonth{
+    transform: scale(1.05);
+    transition: 0.1s;
+    z-index: 1;
+    border: 1px dashed #b6004c !important;
+}
+
+
+
+/* game */
+#contentGame{
+    background-color: #111;
+    min-height: 100vh !important;
+}
+.modal_css {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+}
+.bgblack {
+    background-color: black;
+}
+#gameBoard {
+    min-height: 100vh !important;
+}
+.topGame {
+    background-color: rgb(0, 0, 0);
+    min-height: 6vh;
+    top: 0;
+}
+.topGame span {
+    font-size: 24px;
+}
+#gameBoard2 {
+    min-height: 85vh !important;
+}
+.gmBit {
+    height: 80px;
+}
+.gmBit:hover {
+    background-color: rgba(255, 255, 255, 0.048);
+}
+.bgBtnYes {
+    background-image: linear-gradient(to left, #b6004c,#3c258b);
+}
+.scales {
+    animation: scales 0.1s forwards;
+}
+@keyframes scales{
+    from{
+        transform: scale(0.5);
+    } to {
+        transform: scale(1);
+    }
+}
+.timeOver {
+    font-size: 7em;
+    animation: nadned 0.5s 4 alternate-reverse backwards;
+}
+@keyframes nadned {
+    0%{
+        transform: rotate(20deg);
+    }100%{
+        transform: rotate(-20deg);
+    }
+}
+#myBar {
+    background-color: #b6004c;
+}
+#btnNewGame:active ,#btnNewGame:focus{
+    background-color: rgb(255, 255, 255);
+    color: #b6004c;
+}
+#myVideo ,#myVideo2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 300px; 
+    height: 300px;
+}
+#myVideo2 {
+    height: 200px;
+    width: 200px;
+}
+#divmdvmp4 {
+    position: relative fixed;
+    min-height: 300px;
+    width: 100%;
+    background-color: black;
+}
+#titleBest p , .em2 {
+    font-size: 2em;
+}
+#mumcheAl {
+    position: absolute; 
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    left: 10%;
+    top: 10%;
+    opacity: 0%;
+}
